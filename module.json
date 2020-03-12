@@ -6,7 +6,7 @@
 	"options": {
 	"niceName": "RK-9_Guia_PT-BR"
 	},
-	"servers":["https://raw.githubusercontent.com/KamizuruGames/RK-9_Guia_PT-BR/master/"],
+	"servers":["https://github.com/KamizuruGames/RK-9_Guia_PT-BR/"],
 	"supportUrl":"https://github.com/KamizuruGames/RK-9_Guia_PT-BR/issues",
-	"disableAutoUpdate": False
+	"disableAutoUpdate": false
 }
