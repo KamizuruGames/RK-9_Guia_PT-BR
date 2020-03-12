@@ -1,2 +1,0 @@
-# TERABR
-Hello World
