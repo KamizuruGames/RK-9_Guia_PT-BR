@@ -18,7 +18,7 @@ const FirstBossActions = {						// First Boss Attack Actions Input here with des
 	1189020953: {msg: 'DENTRO'},
 	1189020756: {msg: 'FORA'},
 	1189021756: {msg: 'FORA'},
-	1189020957: {msg: 'FOGUEUTES!'},
+	1189020957: {msg: 'FOGUETES!'},
 	1189020955: {msg: 'PUXAO'},
 };
 
@@ -177,14 +177,14 @@ module.exports = function rk9guide(dispatch) {
 			whichmode = 1; //1 = NM
 			dungeonmode();
 			initialize();
-			command.message('<br> Bem-vindo ao modo normal RK-9 <br> Digite !help para mais informações <br>');
+			command.message('<br> Bem-vindo ao modo normal RK-9 <br> Digite !help para mais informacoes <br>');
 			return;
 			} else if (zone === mapID[1]) {
 			insidemap = true;
 			whichmode = 2; //2 = HM
 			dungeonmode();
 			initialize();
-			command.message('<br> Bem-vindo ao RK-9 Hard Mode <br> Digite !help para mais informações <br>');
+			command.message('<br> Bem-vindo ao RK-9 Hard Mode <br> Digite !help para mais informacoes <br>');
 			return;
 			} else insidemap = false;
     });
@@ -203,14 +203,14 @@ module.exports = function rk9guide(dispatch) {
 			whichmode = 1; //1 = NM
 			dungeonmode();
 			initialize();
-			command.message('<br> Bem-vindo ao modo normal RK-9 <br> Digite !help para mais informações <br>');
+			command.message('<br> Bem-vindo ao modo normal RK-9 <br> Digite !help para mais informacoes <br>');
 			return;
 			} else if (zone === mapID[1]) {
 			insidemap = true;
 			whichmode = 2; //2 = HM
 			dungeonmode();
 			initialize();
-			command.message('<br> Bem-vindo ao RK-9 Hard Mode <br> Digite !help para mais informações <br>');
+			command.message('<br> Bem-vindo ao RK-9 Hard Mode <br> Digite !help para mais informacoes <br>');
 			return;
 			} else insidemap = false;
 		}, 15000);
@@ -218,45 +218,45 @@ module.exports = function rk9guide(dispatch) {
 	
 	//For Inputting commands, Toggle functions ETC 
 	command.add('rk9', () => {
-		if(!insidemap) { command.message('Você deve estar dentro do RK-9'); return; }
+		if(!insidemap) { command.message('Você deve estar dentro da RK-9'); return; }
 		enabled = !enabled;
-		command.message('RK-9 Guia '+(enabled ? 'Enabled' : 'Disabled') + '.');
+		command.message('RK-9 Guia '+(enabled ? 'Ativado' : 'Desativado') + '.');
 	});
 	
 	command.add('party', () => {
-		if(!insidemap) { command.message('Você deve estar dentro do RK-9'); return; }
+		if(!insidemap) { command.message('Você deve estar dentro da RK-9'); return; }
 		sendToParty = !sendToParty;
-		command.message((sendToParty ? 'As mensagens serão enviadas para a party' : 'Somente você verá mensagens'));
+		command.message((sendToParty ? 'As mensagens serao enviadas para a party' : 'Somente você vera mensagens'));
 	});
 	
 	command.add('stream', () => {
-		if(!insidemap) { command.message('Você deve estar dentro do RK-9'); return; }
+		if(!insidemap) { command.message('Você deve estar dentro da RK-9'); return; }
 		streamenabled = !streamenabled;
-		command.message((streamenabled ? 'Stream mode Enabled' : 'Stream mode Disabled'));
+		command.message((streamenabled ? 'Stream mode Ativado' : 'Stream mode Desativado'));
 	});
 	
 	command.add('lastbosstoparty', () => {
-		if(!insidemap) { command.message('Você deve estar dentro do RK-9'); return; }
+		if(!insidemap) { command.message('Você deve estar dentro da RK-9'); return; }
 		lastbosstoparty = !lastbosstoparty;
-		command.message((lastbosstoparty ? 'As mensagens serão enviadas para a party' : 'Somente você verá mensagens'));
+		command.message((lastbosstoparty ? 'As mensagens serao enviadas para a party' : 'Somente você vera mensagens'));
 	});
 	
 	command.add('itemhelper', () => {
-		if(!insidemap) { command.message('Você deve estar dentro do RK-9'); return; }
+		if(!insidemap) { command.message('Você deve estar dentro da RK-9'); return; }
 		itemhelper = !itemhelper;
-		command.message('Item helper spawn ' + (itemhelper ? 'Enabled' : 'Disabled') + '.');
+		command.message('Item helper spawn ' + (itemhelper ? 'Ativado' : 'Desativado') + '.');
 	});
 	
 	command.add('tank', () => {
-		if(!insidemap) { command.message('Você deve estar dentro do RK-9'); return; }
+		if(!insidemap) { command.message('Você deve estar dentro da RK-9'); return; }
 		isTank = !isTank;
-		command.message('Tank Mode ' + (isTank ? 'Enabled' : 'Disabled') + '.');
+		command.message('Tank Mode ' + (isTank ? 'Ativado' : 'Desativado') + '.');
 	});
 	
 	command.add('info', () => {
-		if(!insidemap) { command.message('Você deve estar dentro do RK-9'); return; }
+		if(!insidemap) { command.message('Você deve estar dentro da RK-9'); return; }
 		command.message(mode);
-		command.message('RK9 Guide: ' + enabled);
+		command.message('RK9 Guia: ' + enabled);
 		command.message('Party Notice: ' + sendToParty);
 		command.message('Lastboss to party notice: ' + lastbosstoparty);
 		command.message('Item helper: ' + itemhelper);
@@ -265,14 +265,14 @@ module.exports = function rk9guide(dispatch) {
 	});
 	
 	command.add('help', () => {
-		if(!insidemap) { command.message('Você deve estar dentro do RK-9'); return; }
-		command.message('!rk9 to toggle module');
-		command.message('!party to toggle party call outs');
-		command.message('!lastbosstoparty to toggle lastboss protocol callouts');
-		command.message('!itemhelper to toggle item spawn on ground');
-		command.message('!info to show which module is Enabled or Disabled');
-		command.message('!tank to manually toggle Tank Mode');
-		command.message('!stream to toggle stream mode');
+		if(!insidemap) { command.message('Você deve estar dentro da RK-9'); return; }
+		command.message('!rk9 Para Ativar ou Desativar');
+		command.message('!party Alterar Exibicao para os membros da party');
+		command.message('!lastbosstoparty Alterar Exibicao dos padroes do Boss');
+		command.message('!itemhelper Alterar Exibicao de Itens no chao');
+		command.message('!info Exibir os modulos ligados ou desligados');
+		command.message('!tank Alterar Exibicao do modo Tank');
+		command.message('!stream Alterar Exibicao do modo Stream');
 	});
 	
 	command.add('debug', () => {
