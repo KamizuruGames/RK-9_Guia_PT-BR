@@ -13,6 +13,6 @@ Utilizável apenas dentro da RK-9. O uso dos comandos fora da RK-9 ira retornar 
 - !debug - Para Depuração
 - !stream - Ativa o modo de streaming, o qual removerá todos os itens exibidos da tela e também os aviso de pop-ups
 
-#Créditos de Tradução: Kamizuru
+# Créditos de Tradução: Kamizuru
 
 <img src=https://gf1.geo.gfsrv.net/cdn0a/f8749c1ac4a68c8c7020bdd92055da.jpg>
