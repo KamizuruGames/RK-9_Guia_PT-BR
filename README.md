@@ -1,4 +1,10 @@
 # RK-9_Guia_PT-BR (Versão Traduzida para o Português Brasileiro do guia do Owyn)
+Guia para todos os Boss da RK-9, Normal Mode e Hard Mode.
+
+O script detecta automaticamente o Boss, qual Modo de Dungeon é, e a sua classe: Tank ou DPS.
+
+# Outras Traduções
+**[Inglês (English) by Owyn](https://github.com/Owyn/rk9guide)**
 
 # Comandos:
 Utilizável apenas dentro da RK-9. O uso dos comandos fora da RK-9 ira retornar um valor indefinido.
